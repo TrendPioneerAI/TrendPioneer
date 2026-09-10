@@ -1,6 +1,5 @@
 """Exercise public pages without replacing network requests with mocks."""
 import json
-import os
 from pathlib import Path
 import requests
 from playwright.sync_api import sync_playwright
@@ -25,7 +24,13 @@ with sync_playwright() as p:
             probe.update(httpStatus=r.status_code, contentType=r.headers.get('content-type'), correctTitle='<title>WhenRest' in r.text)
             response = page.goto(url, wait_until='domcontentloaded', timeout=45000)
             probe.update(browserStatus=response.status if response else None, browserUrl=page.url, browserTitle=page.title())
-            page.wait_for_selector('#eventcount', timeout=18000)
+            # The provider shows a standard content notice for ALL HTML files.
+            # Use the normal visible button to open our known, public file.
+            if page.title() == 'External Content Notice | rawgit.hack':
+                assert page.url == url
+                page.get_by_text('Open the page', exact=True).click()
+                probe['contentNoticeConfirmed'] = True
+            page.wait_for_selector('#eventcount', timeout=20000)
             page.wait_for_function("!!document.getElementById('eventcount') && /^\\d+$/.test(document.getElementById('eventcount').textContent.trim())", timeout=30000)
             assert int(page.locator('#eventcount').inner_text()) > 0
             selected = url
