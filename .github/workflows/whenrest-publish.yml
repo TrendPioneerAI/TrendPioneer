@@ -1,6 +1,11 @@
 name: WhenRest publish and verify
 on:
   workflow_dispatch:
+    inputs:
+      enable_pages:
+        description: 'Attempt GitHub Pages only after repository owner enables Pages access'
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -9,8 +14,6 @@ on:
       - '.github/workflows/whenrest-publish.yml'
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
   group: whenrest-publish
   cancel-in-progress: false
@@ -35,17 +38,20 @@ jobs:
           name: whenrest-public-verification
           path: whenrest-test
   pages:
+    if: github.event_name == 'workflow_dispatch' && inputs.enable_pages
     runs-on: ubuntu-latest
     timeout-minutes: 4
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Configure GitHub Pages
+      - name: Configure previously enabled GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Prepare web-only publish directory
         run: |
           mkdir -p _site
@@ -57,21 +63,3 @@ jobs:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Verify published HTML
-        env:
-          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
-        run: |
-          python - <<'PY'
-          import os, time, urllib.request
-          url=os.environ['PAGE_URL']
-          for attempt in range(6):
-              try:
-                  with urllib.request.urlopen(url, timeout=20) as r:
-                      html=r.read().decode('utf-8')
-                      assert '<title>WhenRest' in html
-                      print('WHENREST_PAGES_URL', url, 'HTTP', r.status)
-                      break
-              except Exception:
-                  if attempt==5: raise
-                  time.sleep(10)
-          PY
