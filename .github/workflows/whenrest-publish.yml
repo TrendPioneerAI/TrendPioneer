@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'whenrest/index.html'
+      - 'whenrest/test_public.py'
       - '.github/workflows/whenrest-publish.yml'
 permissions:
   contents: read
@@ -27,71 +28,13 @@ jobs:
           pip install 'playwright>=1.48,<2' 'requests>=2.32,<3'
           python -m playwright install --with-deps chromium
       - name: Verify the public dashboard and live data
-        run: |
-          mkdir -p whenrest-test
-          python - <<'PY'
-          import json, time
-          from pathlib import Path
-          import requests
-          from playwright.sync_api import sync_playwright
-          preview = 'https://raw.githack.com/TrendPioneerAI/TrendPioneer/main/whenrest/index.html'
-          response = requests.get(preview, timeout=45)
-          print('PUBLIC_URL', response.url, 'HTTP', response.status_code, 'CONTENT_TYPE', response.headers.get('content-type'))
-          response.raise_for_status()
-          assert '<title>WhenRest' in response.text
-          report = {'publicUrl': preview, 'httpStatus': response.status_code, 'contentType': response.headers.get('content-type'), 'checks': []}
-          with sync_playwright() as p:
-              browser = p.chromium.launch()
-              page = browser.new_page(viewport={'width': 1440, 'height': 1000}, timezone_id='Asia/Shanghai')
-              errors = []
-              page.on('pageerror', lambda e: errors.append(str(e)))
-              page.goto(preview, wait_until='domcontentloaded', timeout=60000)
-              page.wait_for_function("document.getElementById('eventcount').textContent !== '—'", timeout=45000)
-              n = page.locator('#eventcount').inner_text()
-              assert int(n) > 0, n
-              report['checks'].append({'name': 'Live reset records fetched in browser', 'count': int(n), 'ok': True})
-              assert '4/4' in page.locator('#health').inner_text()
-              report['checks'].append({'name': 'All four public source collectors healthy', 'ok': True})
-              page.screenshot(path='whenrest-test/desktop.png', full_page=True)
-              page.locator('#provider').select_option('claude')
-              assert '尚未接入' in page.locator('#events').inner_text()
-              page.locator('#provider').select_option('all')
-              page.locator('#kind').select_option('banked')
-              assert page.locator('#events article').count() > 0
-              page.locator('#kind').select_option('all')
-              page.locator('#search').fill('Business')
-              assert page.locator('#events article').count() > 0
-              page.locator('#search').fill('')
-              report['checks'].append({'name': 'Provider, reset type and plan-name filters', 'ok': True})
-              page.locator('[data-act="add"]').first.click()
-              page.locator('#timer-name').fill('验收测试 · 个人额度')
-              page.locator('#timer-form button[type=submit]').click()
-              assert '验收测试' in page.locator('#timers').inner_text()
-              page.reload(wait_until='domcontentloaded')
-              assert '验收测试' in page.locator('#timers').inner_text()
-              page.locator('#timers [data-act=delete]').click()
-              report['checks'].append({'name': 'Personal timer persists after reload and can be deleted', 'ok': True})
-              for iso, expected in [('2026-03-08T07:00:00Z','2026-03-08T08:00:00.000Z'),('2026-03-08T09:00:00Z','2026-03-09T07:00:00.000Z'),('2026-11-01T08:00:00Z','2026-11-02T08:00:00.000Z')]:
-                  actual = page.evaluate('(iso)=>new Date(window.WhenRestTest.midnight(Date.parse(iso))).toISOString()', iso)
-                  assert actual == expected, (iso, actual, expected)
-              report['checks'].append({'name': 'Pacific-midnight calculation across daylight saving transitions', 'ok': True})
-              page.set_viewport_size({'width': 390, 'height': 844})
-              assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth'), 'Mobile horizontal overflow'
-              page.screenshot(path='whenrest-test/mobile.png', full_page=True)
-              report['checks'].append({'name': '390px mobile viewport without overflow', 'ok': True})
-              assert not errors, errors
-              report['checks'].append({'name': 'No uncaught browser JavaScript errors', 'ok': True})
-              browser.close()
-          Path('whenrest-test/report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
-          print(json.dumps(report, ensure_ascii=False, indent=2))
-          PY
+        run: python whenrest/test_public.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: whenrest-public-verification
           path: whenrest-test
   pages:
-    needs: verify
     runs-on: ubuntu-latest
     timeout-minutes: 4
     environment:
@@ -114,3 +57,21 @@ jobs:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify published HTML
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import os, time, urllib.request
+          url=os.environ['PAGE_URL']
+          for attempt in range(6):
+              try:
+                  with urllib.request.urlopen(url, timeout=20) as r:
+                      html=r.read().decode('utf-8')
+                      assert '<title>WhenRest' in html
+                      print('WHENREST_PAGES_URL', url, 'HTTP', r.status)
+                      break
+              except Exception:
+                  if attempt==5: raise
+                  time.sleep(10)
+          PY
