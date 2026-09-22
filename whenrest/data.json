@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-22T11:27:22.809730+00:00",
+  "generatedAt": "2026-09-22T15:38:01.119556+00:00",
   "pollIntervalSeconds": 300,
   "refreshNote": "后台目标每 5 分钟采集；免费调度可能延迟。网页每 60 秒检查一次。",
   "sources": [
@@ -10,8 +10,8 @@
       "name": "Claude 官方服务状态",
       "url": "https://status.claude.com/api/v2/summary.json",
       "kind": "service-status",
-      "attemptedAt": "2026-09-22T11:27:22.809730+00:00",
-      "lastSuccessAt": "2026-09-22T11:27:22.809730+00:00",
+      "attemptedAt": "2026-09-22T15:38:01.119556+00:00",
+      "lastSuccessAt": "2026-09-22T15:38:01.119556+00:00",
       "status": "ok",
       "error": null,
       "items": 2
@@ -22,7 +22,7 @@
       "name": "Codex Resets · 第三方公开索引",
       "url": "https://codex-resets.com/",
       "kind": "reset-index",
-      "attemptedAt": "2026-09-22T11:27:22.809730+00:00",
+      "attemptedAt": "2026-09-22T15:38:01.119556+00:00",
       "lastSuccessAt": "2026-09-15T10:57:40.744079+00:00",
       "status": "error",
       "error": "HTTPError: 403 Client Error: Forbidden for url: https://codex-resets.com/"
@@ -33,8 +33,8 @@
       "name": "Cursor 官方服务状态",
       "url": "https://status.cursor.com/api/v2/summary.json",
       "kind": "service-status",
-      "attemptedAt": "2026-09-22T11:27:22.809730+00:00",
-      "lastSuccessAt": "2026-09-22T11:27:22.809730+00:00",
+      "attemptedAt": "2026-09-22T15:38:01.119556+00:00",
+      "lastSuccessAt": "2026-09-22T15:38:01.119556+00:00",
       "status": "ok",
       "error": null,
       "items": 4
@@ -45,8 +45,8 @@
       "name": "OpenAI 官方服务状态",
       "url": "https://status.openai.com/api/v2/summary.json",
       "kind": "service-status",
-      "attemptedAt": "2026-09-22T11:27:22.809730+00:00",
-      "lastSuccessAt": "2026-09-22T11:27:22.809730+00:00",
+      "attemptedAt": "2026-09-22T15:38:01.119556+00:00",
+      "lastSuccessAt": "2026-09-22T15:38:01.119556+00:00",
       "status": "ok",
       "error": null,
       "items": 3
@@ -963,11 +963,11 @@
           "updatedAt": "2026-07-09T19:25:56Z"
         }
       ],
-      "sourceUpdatedAt": "2026-07-09T19:25:56Z",
+      "sourceUpdatedAt": "2026-09-22T15:26:40Z",
       "pageUrl": "https://status.openai.com",
       "note": "仅为服务运行状态，不是额度或重置证明。",
       "sourceId": "openai-status",
-      "fetchedAt": "2026-09-22T11:27:22.809730+00:00"
+      "fetchedAt": "2026-09-22T15:38:01.119556+00:00"
     },
     {
       "provider": "claude",
@@ -984,11 +984,11 @@
           "updatedAt": "2026-09-22T02:11:43.723Z"
         }
       ],
-      "sourceUpdatedAt": "2026-09-22T11:24:25.720Z",
+      "sourceUpdatedAt": "2026-09-22T14:54:36.270Z",
       "pageUrl": "https://status.claude.com",
       "note": "仅为服务运行状态，不是额度或重置证明。",
       "sourceId": "claude-status",
-      "fetchedAt": "2026-09-22T11:27:22.809730+00:00"
+      "fetchedAt": "2026-09-22T15:38:01.119556+00:00"
     },
     {
       "provider": "cursor",
@@ -1002,7 +1002,7 @@
         {
           "name": "Cloud Agents",
           "status": "operational",
-          "updatedAt": "2026-09-22T01:42:57.889Z"
+          "updatedAt": "2026-09-22T13:45:43.104Z"
         },
         {
           "name": "cursor.com",
@@ -1015,11 +1015,11 @@
           "updatedAt": "2026-09-22T01:42:57.900Z"
         }
       ],
-      "sourceUpdatedAt": "2026-09-22T11:24:35.797Z",
+      "sourceUpdatedAt": "2026-09-22T14:39:27.571Z",
       "pageUrl": "https://status.cursor.com",
       "note": "仅为服务运行状态，不是额度或重置证明。",
       "sourceId": "cursor-status",
-      "fetchedAt": "2026-09-22T11:27:22.809730+00:00"
+      "fetchedAt": "2026-09-22T15:38:01.119556+00:00"
     }
   ],
   "coverage": {
