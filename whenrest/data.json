@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-28T00:41:57.427088+00:00",
+  "generatedAt": "2026-11-28T08:29:47.469707+00:00",
   "pollIntervalSeconds": 300,
   "refreshNote": "后台目标每 5 分钟采集；免费调度可能延迟。网页每 60 秒检查一次。",
   "sources": [
@@ -10,8 +10,8 @@
       "name": "Claude 官方服务状态",
       "url": "https://status.claude.com/api/v2/summary.json",
       "kind": "service-status",
-      "attemptedAt": "2026-11-28T00:41:57.427088+00:00",
-      "lastSuccessAt": "2026-11-28T00:41:57.427088+00:00",
+      "attemptedAt": "2026-11-28T08:29:47.469707+00:00",
+      "lastSuccessAt": "2026-11-28T08:29:47.469707+00:00",
       "status": "ok",
       "error": null,
       "items": 2
@@ -22,8 +22,8 @@
       "name": "Codex Resets · 第三方公开索引",
       "url": "https://codex-resets.com/",
       "kind": "reset-index",
-      "attemptedAt": "2026-11-28T00:41:57.427088+00:00",
-      "lastSuccessAt": "2026-11-28T00:41:57.427088+00:00",
+      "attemptedAt": "2026-11-28T08:29:47.469707+00:00",
+      "lastSuccessAt": "2026-11-28T08:29:47.469707+00:00",
       "status": "ok",
       "error": null,
       "items": 64
@@ -34,8 +34,8 @@
       "name": "Cursor 官方服务状态",
       "url": "https://status.cursor.com/api/v2/summary.json",
       "kind": "service-status",
-      "attemptedAt": "2026-11-28T00:41:57.427088+00:00",
-      "lastSuccessAt": "2026-11-28T00:41:57.427088+00:00",
+      "attemptedAt": "2026-11-28T08:29:47.469707+00:00",
+      "lastSuccessAt": "2026-11-28T08:29:47.469707+00:00",
       "status": "ok",
       "error": null,
       "items": 5
@@ -46,8 +46,8 @@
       "name": "OpenAI 官方服务状态",
       "url": "https://status.openai.com/api/v2/summary.json",
       "kind": "service-status",
-      "attemptedAt": "2026-11-28T00:41:57.427088+00:00",
-      "lastSuccessAt": "2026-11-28T00:41:57.427088+00:00",
+      "attemptedAt": "2026-11-28T08:29:47.469707+00:00",
+      "lastSuccessAt": "2026-11-28T08:29:47.469707+00:00",
       "status": "ok",
       "error": null,
       "items": 1
@@ -68,7 +68,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-11-26T15:21:22.444557+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2125299248782778588",
@@ -86,7 +86,7 @@
         "Business"
       ],
       "firstSeenAt": "2026-11-24T21:08:48.679333+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2125784147889393806",
@@ -122,7 +122,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-11-12T23:57:01.411365+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2120410480204525936",
@@ -186,7 +186,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-10-26T11:00:37.046183+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2115273064481218829",
@@ -218,7 +218,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-10-23T05:57:03.643820+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2114200291319124163",
@@ -250,7 +250,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-10-22T10:31:58.136439+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2112432076767289678",
@@ -266,7 +266,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-10-20T07:35:56.996155+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2110951585983631505",
@@ -314,7 +314,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-10-13T07:03:38.226498+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2110595554036400151",
@@ -346,7 +346,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-10-11T07:14:35.380044+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2109045392684032299",
@@ -378,7 +378,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-10-07T08:54:13.871657+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2107913738791596286",
@@ -442,7 +442,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-10-05T18:43:32.192215+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2103911959544610829",
@@ -458,7 +458,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-10-05T18:43:32.192215+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2102463847714247142",
@@ -478,7 +478,7 @@
         "Business"
       ],
       "firstSeenAt": "2026-10-05T18:43:32.192215+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2098685367058612394",
@@ -494,7 +494,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-12T08:50:27.571155+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2097752790177370535",
@@ -526,7 +526,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2098300424520687965",
@@ -578,7 +578,7 @@
         "Business"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2095651088502591861",
@@ -596,7 +596,7 @@
         "Team"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2094251180121854309",
@@ -612,7 +612,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2093801758665715784",
@@ -630,7 +630,7 @@
         "Team"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2093014447833116908",
@@ -646,7 +646,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2091688655828246890",
@@ -662,7 +662,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2090766694897619318",
@@ -678,7 +678,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2087706104814023111",
@@ -694,7 +694,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2086188036493344823",
@@ -710,7 +710,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2083395449814229287",
@@ -726,7 +726,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2082317452755751098",
@@ -742,7 +742,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2081940052154933696",
@@ -758,7 +758,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2081096447718723984",
@@ -774,7 +774,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2079609157934886975",
@@ -790,7 +790,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2078320950488297917",
@@ -808,7 +808,7 @@
         "Team"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2077607697487188198",
@@ -826,7 +826,7 @@
         "Team"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2077114635308986427",
@@ -842,7 +842,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2076735790567338203",
@@ -858,7 +858,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2076418567143408112",
@@ -874,7 +874,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2075820987833274448",
@@ -890,7 +890,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2075641131002700120",
@@ -906,7 +906,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2075330198887940337",
@@ -922,7 +922,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2071740419030053227",
@@ -938,7 +938,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2071381664853319742",
@@ -954,7 +954,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2070653282440405046",
@@ -970,7 +970,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2067399435009622521",
@@ -986,7 +986,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2062329981548802523",
@@ -1002,7 +1002,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2061106703446450392",
@@ -1018,7 +1018,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2058280452851638313",
@@ -1034,7 +1034,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2055707616605835333",
@@ -1050,7 +1050,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2048997818673537399",
@@ -1066,7 +1066,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2046367145588916687",
@@ -1082,7 +1082,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2044943514832871564",
@@ -1098,7 +1098,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2042299371602264319",
@@ -1114,7 +1114,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2041655710346572085",
@@ -1130,7 +1130,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2039248564967424483",
@@ -1146,7 +1146,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2037346989244096581",
@@ -1162,7 +1162,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2031605592352313567",
@@ -1178,7 +1178,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2031216405266481489",
@@ -1194,7 +1194,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2030474136024400173",
@@ -1213,7 +1213,7 @@
         "Pro"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2029308599835738218",
@@ -1232,7 +1232,7 @@
         "Pro"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2028649088594436225",
@@ -1250,7 +1250,7 @@
         "Team"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2004100061933064395",
@@ -1266,7 +1266,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2002137269134819610",
@@ -1282,7 +1282,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-2001114683047317723",
@@ -1298,7 +1298,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-1995988609896513743",
@@ -1316,7 +1316,7 @@
         "Team"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-1992370994028388670",
@@ -1334,7 +1334,7 @@
         "Team"
       ],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-1986166501435711936",
@@ -1350,7 +1350,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "id": "codex-1968163721034994139",
@@ -1366,7 +1366,7 @@
       "evidence": "third-party-index",
       "plansMentioned": [],
       "firstSeenAt": "2026-09-10T09:05:36.817021+00:00",
-      "lastSeenAt": "2026-11-28T00:41:57.427088+00:00"
+      "lastSeenAt": "2026-11-28T08:29:47.469707+00:00"
     }
   ],
   "services": [
@@ -1384,7 +1384,7 @@
       "pageUrl": "https://status.openai.com",
       "note": "仅为服务运行状态，不是额度或重置证明。",
       "sourceId": "openai-status",
-      "fetchedAt": "2026-11-28T00:41:57.427088+00:00"
+      "fetchedAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "provider": "claude",
@@ -1401,11 +1401,11 @@
           "updatedAt": "2026-11-27T10:40:12.396Z"
         }
       ],
-      "sourceUpdatedAt": "2026-11-28T00:09:38.150Z",
+      "sourceUpdatedAt": "2026-11-28T07:29:37.253Z",
       "pageUrl": "https://status.claude.com",
       "note": "仅为服务运行状态，不是额度或重置证明。",
       "sourceId": "claude-status",
-      "fetchedAt": "2026-11-28T00:41:57.427088+00:00"
+      "fetchedAt": "2026-11-28T08:29:47.469707+00:00"
     },
     {
       "provider": "cursor",
@@ -1414,34 +1414,34 @@
         {
           "name": "IDE",
           "status": "operational",
-          "updatedAt": "2026-11-28T00:41:53.065Z"
+          "updatedAt": "2026-11-28T08:29:41.389Z"
         },
         {
           "name": "Grok Build and Cursor: CLI",
           "status": "operational",
-          "updatedAt": "2026-11-28T00:41:53.065Z"
+          "updatedAt": "2026-11-28T08:29:41.389Z"
         },
         {
           "name": "Grok Build and Cursor: cursor.com",
           "status": "operational",
-          "updatedAt": "2026-11-28T00:41:53.065Z"
+          "updatedAt": "2026-11-28T08:29:41.389Z"
         },
         {
           "name": "Grok Build and Cursor: Cloud Agents",
           "status": "operational",
-          "updatedAt": "2026-11-28T00:41:53.065Z"
+          "updatedAt": "2026-11-28T08:29:41.389Z"
         },
         {
           "name": "Third-party Model Providers",
           "status": "operational",
-          "updatedAt": "2026-11-28T00:41:53.065Z"
+          "updatedAt": "2026-11-28T08:29:41.389Z"
         }
       ],
-      "sourceUpdatedAt": "2026-11-28T00:41:53.065Z",
+      "sourceUpdatedAt": "2026-11-28T08:29:41.389Z",
       "pageUrl": "https://status.cursor.com",
       "note": "仅为服务运行状态，不是额度或重置证明。",
       "sourceId": "cursor-status",
-      "fetchedAt": "2026-11-28T00:41:57.427088+00:00"
+      "fetchedAt": "2026-11-28T08:29:47.469707+00:00"
     }
   ],
   "coverage": {
